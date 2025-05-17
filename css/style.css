@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --text-corp: #012758;
+  --bg-corp: #436DFB;
+  --bg-corp-light: #598BE0;
+  --bg-corp-dark: #325488;
+}
+
+.text-corp {
+  color: var(--text-corp);
+}
+
+.bg-corp {
+  background-color: var(--bg-corp);
+}
+.bg-corp-light {
+  background-color: var(--bg-corp-light);
+}
+.bg-corp-dark {
+  background-color: var(--bg-corp-dark);
+}
+.bg-corp-light:hover {
+  background-color: var(--bg-corp);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+  .btn-toggle-group {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .btn-toggle-group:hover .btn:not(:hover) {
+    opacity: 0.6;
+    filter: grayscale(40%);
+  }
+
+  .btn-toggle-group .btn {
+    transition: all 0.3s ease;
+  }
