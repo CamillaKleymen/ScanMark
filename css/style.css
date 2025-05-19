@@ -41,3 +41,75 @@
   .btn-toggle-group .btn {
     transition: all 0.3s ease;
   }
+
+
+.diamond-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+}
+
+.diamond {
+  position: absolute;
+  width: 185px;
+  height: 185px;
+  /* background: transparent; */
+  background-image: url('../images/part.svg');
+  transform: rotate(45deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.diamond img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  transform: rotate(-45deg);
+}
+
+.diamond p {
+  transform: rotate(-45deg);
+  font-size: 16px;
+  color: #007BFF;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.diamond.top {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.diamond.bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.diamond.left {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.diamond.right {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.center-square {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  background: #007BFF;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+}
