@@ -113,3 +113,44 @@
   transform: translate(-50%, -50%);
   border-radius: 4px;
 }
+
+
+
+.bg-belgisi {
+  background-image: url('../images/belgisi_banner.png');
+}
+
+.belgisi {
+  max-width: 840px;
+  min-height: 400px;
+}
+
+
+.step-box {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+  min-height: 100%;
+}
+.step-number-left {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.step-number-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
