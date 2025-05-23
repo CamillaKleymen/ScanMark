@@ -27,7 +27,7 @@
 }
 
 .bg-secondary {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-secondary)!important;
 }
 
 .hover {
@@ -168,31 +168,89 @@
 }
 
 
-.step-box {
-  background-color: #f4f4f4;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  position: relative;
-  min-height: 100%;
-}
 .step-number-left {
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
-  font-size: 2rem;
+  transform: translate(-200%, -135%);
+  background-color: #ff8000; 
+  color: #fff;
   font-weight: bold;
-  color: #000;
+  font-size: 1.25rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
+
 
 .step-number-right {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
-  font-size: 2rem;
+  transform: translate(50%, -135%);
+  background-color: #ff8000; 
+  color: #fff;
   font-weight: bold;
-  color: #000;
+  font-size: 1.25rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 5;
 }
+
+.step-number-left-mb {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-200%, -135%);
+  background-color: #ff8000; 
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+.step-number-right-mb {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -135%);
+  background-color: #ff8000; 
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+
+
 
 .shadow-none {
   box-shadow: none !important;
+}
+
+ .border-secondary {
+  border-bottom: 3px solid var(--bg-secondary) !important;
 }
