@@ -30,15 +30,15 @@
 
 <body>
 
-
-    <div class="bg-banner-wrapper"
+    <!-- desktop  version-->
+    <div class="bg-banner-wrapper d-none d-md-block"
         style="background: url('images/banner.png') no-repeat center center/cover; height: 80vh;">
 
         <header class="position-relative py-2 pt-5">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand w-25" href="#">
-                        <h2 class="display-1 fs-1 text-white fw-medium">Scan Mark</h2>
+                    <a class="navbar-brand text-white w-25" href="#">
+                        <h2 cl8ass="display-1 fs-1 text-white fw-medium">Scan Mark</h2>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -128,37 +128,102 @@
                 </div>
             </div>
         </section>
-
     </div>
 
 
-    <!-- our key principles -->
-    <section class="py-5">
+    <!-- mobile version -->
+    <div class="bg-banner-wrapper d-md-none"
+        style="background: url('images/banner.png') no-repeat center center/cover; height: 80vh;">
+
+        <header class="position-relative py-2 pt-5">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand ps-4 text-white w-25" href="#">
+                        <h2 cl8ass="display-1 fs-1 text-white fw-medium">Scan Mark</h2>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 fs-5 d-flex justify-content-between">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white px-3" href="#">О компании</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-3" href="#">Принципы работы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-3" href="#">Преимущества</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-3" href="#">Услуги</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-3" href="#">Наши клиенты</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center gap-2">
+                            <button type="button" class="btn btn-light text-corp rounded-pill">ЗАКАЗАТЬ ЗВОНОК</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="d-flex align-items-center justify-content-center text-light pt-3" lang="ru">
+            <div class="container text-start py-5">
+                <div class="row h-100">
+                    <div class="px-5">
+                        <div class="text-start">
+                            <h1 class="text-white display-5 fw-normal">Scan Mark — надёжный интегратор цифровой
+                                маркировки в <strong>Узбекистане</strong> </h1>
+                            <p class="fs-4 text-white display-6 mt-4 ">Специализируемся на внедрении системы "Честный
+                                ЗНАК" — от регистрации до печати кодов и интеграции в ИТ-системы.</p>
+                            <div class="flex-column mt-5">
+                                <button type="button"
+                                    class="btn btn-light text-corp rounded-pill w-50 mb-3 fs-4 text-corp px-2">Подробнее</button>
+                                <button type="button"
+                                    class="btn btn-light text-corp rounded-pill text-white bg-transparent w-75 fs-4 px-2">скачать
+                                    презентацию</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- our key principles {desktop}-->
+    <section class="py-5 d-none d-md-block">
         <div class="container">
-            <h2 class="fw-normal mb-4 display-5 text-corp w-25">Наши ключевые принципы:</h2>
-            <div class="row g-4 text-corp px-5">
+            <h2 class="fw-normal mb-4 display-5 w-25">Наши ключевые принципы:</h2>
+            <div class="row g-4 px-5">
                 <div class="col-md-6">
                     <div class="p-4 bg-light rounded h-100">
                         <h5 class="fw-bold">Точность исполнения —</h5>
-                        <p class="mb-0">соблюдение всех технических требований и сроков реализации</p>
+                        <p class="mb-0 text-corp">соблюдение всех технических требований и сроков реализации</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="p-4 bg-light rounded h-100">
                         <h5 class="fw-bold">Технологичность —</h5>
-                        <p class="mb-0">применение сертифицированного оборудования и актуального ПО</p>
+                        <p class="mb-0 text-corp">применение сертифицированного оборудования и актуального ПО</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="p-4 bg-light rounded h-100">
                         <h5 class="fw-bold">Комплексный подход —</h5>
-                        <p class="mb-0">единый подрядчик для всего цикла маркировки</p>
+                        <p class="mb-0 text-corp">единый подрядчик для всего цикла маркировки</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="p-4 bg-light rounded h-100">
                         <h5 class="fw-bold">Минимизация нагрузки</h5>
-                        <p class="mb-0">на клиента — мы берём на себя всю техническую и бюрократическую работу</p>
+                        <p class="mb-0 text-corp">на клиента — мы берём на себя всю техническую и бюрократическую работу
+                        </p>
                     </div>
                 </div>
             </div>
@@ -171,39 +236,97 @@
         </div>
     </section>
 
-
-    <!-- asl belgisi system -->
-    <section class="py-5 bg-white">
+    <!-- our key principles {mobile}-->
+    <section class="py-5 d-md-none">
         <div class="container">
-            <h2 class="fw-bold mb-3">Зачем нужна система Asl belgisi?</h2>
-            <p class="mb-5 text-muted">
-                Национальная система цифровой маркировки Asl belgisi направлена на создание прозрачного товарооборота и
-                защиту прав потребителей
+            <h2 class="fw-normal mb-4 display-5 w-100">Наши ключевые принципы:</h2>
+            <div class="row g-4 px-5">
+                <div class="col-md-6">
+                    <div class="p-4 bg-light rounded h-100">
+                        <h5 class="fw-bold">Точность исполнения —</h5>
+                        <p class="mb-0 text-corp">соблюдение всех технических требований и сроков реализации</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-light rounded h-100">
+                        <h5 class="fw-bold">Технологичность —</h5>
+                        <p class="mb-0 text-corp">применение сертифицированного оборудования и актуального ПО</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-light rounded h-100">
+                        <h5 class="fw-bold">Комплексный подход —</h5>
+                        <p class="mb-0 text-corp">единый подрядчик для всего цикла маркировки</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-light rounded h-100">
+                        <h5 class="fw-bold">Минимизация нагрузки</h5>
+                        <p class="mb-0 text-corp">на клиента — мы берём на себя всю техническую и бюрократическую работу
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-5 px-5 text-center fs-5 fw-medium">
+                <strong> Scan Mark </strong>— надёжный интегратор цифровой маркировки в Узбекистане. Мы внедряем систему
+                Asl belgisi,
+                сопровождая клиентов на всех этапах: от регистрации до интеграции в ИТ-системы. Помогаем не только
+                соответствовать требованиям, но и улучшать учёт, логистику и прозрачность поставок.
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- asl belgisi system {desktop} -->
+    <section class="py-5 bg-white d-none d-md-block">
+        <div class="container">
+            <h2 class="fw-bold mb-3">
+                Зачем нужна <br>
+                система Asl belgisi ?
+            </h2>
+            <p class="mb-5 text-corp fw-medium">
+                Национальная система цифровой маркировки Asl belgisi направлена<br>
+                на создание прозрачного товарооборота и защиту прав потребителей
             </p>
             <div class="row mb-4">
                 <div class="col-md-6">
                     <h5 class="fw-bold mb-3">Основные задачи системы</h5>
                     <div class="d-grid gap-3">
-                        <div class="p-3 bg-light">Обеспечение прозрачности движения товара от завода до
-                            покупателя</div>
-                        <div class="p-3 bg-light rounded">Цифровое сопровождение всего жизненного цикла товара</div>
-                        <div class="p-3 bg-light rounded">Защита интересов добросовестных производителей</div>
-                        <div class="p-3 bg-light rounded">Борьба с контрафактом и незаконной продукцией</div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-100">
+                            Обеспечение прозрачности движения товара от завода до покупателя
+                        </div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-75">
+                            Цифровое сопровождение всего жизненного цикла товара
+                        </div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-100">
+                            Защита интересов добросовестных производителей
+                        </div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-50">
+                            Борьба с контрафактом и незаконной продукцией
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <h5 class="fw-bold mb-3">Преимущества внедрения системы:</h5>
                     <div class="d-grid gap-3">
-                        <div class="p-3 bg-light rounded">Обеспечение прозрачности движения товара от завода до
-                            покупателя</div>
-                        <div class="p-3 bg-light rounded">Цифровое сопровождение всего жизненного цикла товара</div>
-                        <div class="p-3 bg-light rounded">Защита интересов добросовестных производителей</div>
-                        <div class="p-3 bg-light rounded">Борьба с контрафактом и незаконной продукцией</div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-100">
+                            Обеспечение прозрачности движения товара от завода до покупателя
+                        </div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-75">
+                            Цифровое сопровождение всего жизненного цикла товара
+                        </div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-100">
+                            Защита интересов добросовестных производителей
+                        </div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-50">
+                            Борьба с контрафактом и незаконной продукцией
+                        </div>
                     </div>
                 </div>
             </div>
             <h5 class="fw-bold mb-3">Основные задачи системы</h5>
-            <ul class="list-unstyled text-muted">
+            <ul class="list-unstyled text-corp fw-medium">
                 <li class="mb-2"><i class="bi bi-dot"></i> Постановления КМ РУз №806, №737, №149</li>
                 <li class="mb-2"><i class="bi bi-dot"></i> Указ Президента РУз № УП-6019</li>
                 <li><i class="bi bi-dot"></i> Стандарты агентств "Ўзстандарт" и "UzbekExpertiza"</li>
@@ -211,8 +334,63 @@
         </div>
     </section>
 
-    <!-- principle of belgisi -->
-    <section class="py-5 text-white bg-belgisi position-relative">
+
+
+    <!-- asl belgisi system {mobile} -->
+    <section class="py-5 bg-white d-md-none">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Зачем нужна система Asl belgisi?</h2>
+            <p class="mb-5 text-corp">
+                Национальная система цифровой маркировки Asl belgisi направлена на создание прозрачного товарооборота и
+                защиту прав потребителей
+            </p>
+            <div class="flex-column mb-4">
+                <div class="col">
+                    <h5 class="fw-bold mb-3">Основные задачи системы</h5>
+                    <div class="d-grid gap-3">
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-100">
+                            Обеспечение прозрачности движения товара от завода до покупателя
+                        </div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-100">
+                            Цифровое сопровождение всего жизненного цикла товара
+                        </div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-100">
+                            Защита интересов добросовестных производителей
+                        </div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-100">
+                            Борьба с контрафактом и незаконной продукцией
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h5 class="fw-bold mb-3">Преимущества внедрения системы:</h5>
+                    <div class="d-grid gap-3">
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-100">
+                            Обеспечение прозрачности движения товара от завода до покупателя
+                        </div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-100">
+                            Цифровое сопровождение всего жизненного цикла товара
+                        </div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-100">
+                            Защита интересов добросовестных производителей
+                        </div>
+                        <div class="p-3 fw-medium bg-white rounded shadow-lg border border-1 border-muted text-success w-100">
+                            Борьба с контрафактом и незаконной продукцией
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="fw-bold mb-3">Основные задачи системы</h5>
+            <ul class="list-unstyled text-corp fw-medium">
+                <li class="mb-2"><i class="bi bi-dot"></i> Постановления КМ РУз №806, №737, №149</li>
+                <li class="mb-2"><i class="bi bi-dot"></i> Указ Президента РУз № УП-6019</li>
+                <li><i class="bi bi-dot"></i> Стандарты агентств "Ўзстандарт" и "UzbekExpertiza"</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- principle of belgisi {desktop}-->
+    <section class="py-5 text-white bg-belgisi position-relative d-none d-md-block">
         <div class="container text-center">
             <h2 class="fw-bold mb-3 text-white">Принципы работы системы <strong>Asl belgisi</strong></h2>
             <p class="mb-5 text-white">
@@ -247,6 +425,50 @@
                 <div class="position-absolute" style="top: 330px; right: 0; width: 500px;">
                     <div
                         class="p-3 fs-5 rounded bg-white border border-2 border-white text-corp fw-semibold shadow-sm text-start">
+                        <strong class="text-black">Автоматическая верификация</strong> — система блокирует дублирующие
+                        или ошибочные коды
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- principle of belgisi {mobile} -->
+    <section class="py-5 text-white bg-belgisi position-relative d-md-none">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3 text-white">Принципы работы системы <strong>Asl belgisi</strong></h2>
+            <p class="mb-5 text-white fw-medium">
+                Система строится на цифровых технологиях, которые позволяют отследить движение товара на всех этапах:
+            </p>
+
+            <div class="position-relative mx-auto mb-5 belgisi">
+                <div class="position-absolute" style="top: 0; left: 0; width: 460px;">
+                    <div
+                        class="p-3 fs-5 rounded rounded-5 bg-white border border-2 border-white text-corp fw-semibold shadow-sm text-start">
+                        <strong class="text-black">Идентификация</strong> — каждому товару присваивается уникальный
+                        DataMatrix-код
+                    </div>
+                </div>
+
+                <div class="position-absolute" style="top: 110px; right: 0; width: 460px;">
+                    <div
+                        class="p-3 fs-5 rounded rounded-5 bg-white border border-2 border-white text-corp fw-semibold shadow-sm text-start">
+                        <strong class="text-black">Фиксация этапов</strong> — каждое перемещение и упаковка фиксируются
+                        в системе
+                    </div>
+                </div>
+
+                <div class="position-absolute" style="top: 220px; left: 0; width: 460px;">
+                    <div
+                        class="p-3 fs-5 rounded rounded-5 bg-white border border-2 border-white text-corp fw-semibold shadow-sm text-start">
+                        <strong class="text-black">Публичная проверка</strong> — покупатель может отсканировать код и
+                        получить информацию
+                    </div>
+                </div>
+
+                <div class="position-absolute" style="top: 330px; right: 0; width: 460px;">
+                    <div
+                        class="p-3 fs-5 rounded rounded-5 bg-white border border-2 border-white text-corp fw-semibold shadow-sm text-start">
                         <strong class="text-black">Автоматическая верификация</strong> — система блокирует дублирующие
                         или ошибочные коды
                     </div>
