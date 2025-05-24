@@ -57,7 +57,6 @@
     transition: all 0.3s ease;
   }
 
-
 .diamond-section {
   display: flex;
   justify-content: end;
@@ -177,7 +176,10 @@
 
 
 .bg-belgisi {
-  background-image: url('../images/belgisi_banner.png');
+  background-image: url("../images/belgisi_banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .belgisi {
@@ -298,4 +300,12 @@
     width: 161px;
     height: 100px;
     transform: translate(131%, -63%) !important;
+}
+
+
+
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
 }
